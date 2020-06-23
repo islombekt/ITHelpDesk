@@ -1,6 +1,6 @@
 using System;
 
-namespace HelpDesk.Models
+namespace HelpDesk.Models.ViewModels
 {
     public class ErrorViewModel
     {
