@@ -13,10 +13,10 @@ namespace ITHelpDesk.Models
         public string FName { get; set; }
         public string LName { get; set; }
 
-        public int AddressId { get; set; }
+        //public int AddressId { get; set; }
 
-        [ForeignKey("AddressId")]
-        public Address Address { get; set; }
+        //[ForeignKey("AddressId")]
+        //public Address Address { get; set; }
 
         [NotMapped]
         public string Role { get; set; }

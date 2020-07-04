@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Http;
 using HelpDesk.DataAccess.Data;
 using ITHelpDesk.DataAccess.Repository.IRepository;
 using ITHelpDesk.DataAccess.Repository;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using ITHelpDesk.Utility;
 
 namespace HelpDesk
 {
@@ -36,6 +38,7 @@ namespace HelpDesk
             
             services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddSingleton<IEmailSender, EmailSender>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();

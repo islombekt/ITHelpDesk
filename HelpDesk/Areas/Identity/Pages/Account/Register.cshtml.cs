@@ -74,7 +74,7 @@ namespace ITHelpDesk.Areas.Identity.Pages.Account
             public string FName { get; set; }
             public string LName { get; set; }
             public string PhoneNumber { get; set; }
-            public int AddressId { get; set; }
+            //public int AddressId { get; set; }
             public string Role { get; set; }
         }
 
@@ -94,7 +94,7 @@ namespace ITHelpDesk.Areas.Identity.Pages.Account
                 {
                     UserName = Input.Email,
                     Email = Input.Email,
-                    AddressId = Input.AddressId,
+                    //AddressId = Input.AddressId,
                     FName = Input.FName,
                     LName = Input.LName,
                     PhoneNumber = Input.PhoneNumber,
